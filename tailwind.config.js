@@ -30,7 +30,10 @@ module.exports = {
         "pulse-grid": "pulseGrid 12s linear infinite",
         "marquee": "marquee 24s linear infinite",
         "tilt": "tilt 7s ease-in-out infinite",
-        "shine": "shine 3.5s linear infinite"
+        "shine": "shine 3.5s linear infinite",
+        "drift": "drift 16s ease-in-out infinite",
+        "beam": "beam 6s linear infinite",
+        "beam-delay": "beam 7.5s linear infinite 1.2s"
       },
       keyframes: {
         float: {
@@ -53,6 +56,16 @@ module.exports = {
         shine: {
           "0%": { transform: "translateX(-140%) skewX(-18deg)" },
           "100%": { transform: "translateX(220%) skewX(-18deg)" }
+        },
+        drift: {
+          "0%, 100%": { transform: "translate3d(0, 0, 0) scale(1)" },
+          "50%": { transform: "translate3d(22px, -18px, 0) scale(1.06)" }
+        },
+        beam: {
+          "0%": { transform: "translateX(-35%)", opacity: "0" },
+          "15%": { opacity: "1" },
+          "85%": { opacity: "1" },
+          "100%": { transform: "translateX(35%)", opacity: "0" }
         }
       },
       backgroundImage: {

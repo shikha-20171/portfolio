@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Shikha Gour | Full Stack Developer",
+  title: "Shikha Gour | Premium Full Stack Developer Portfolio",
   description:
-    "Animated developer portfolio for Shikha Gour featuring projects, internships, skills, and full-stack experience."
+    "Premium developer portfolio for Shikha Gour featuring full-stack projects, internships, modern product thinking, and polished web experiences."
 };
 
 export default function RootLayout({ children }) {
